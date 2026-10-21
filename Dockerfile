@@ -13,8 +13,7 @@ COPY requirements.txt requirements-rcnn.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Download the trained plate model from the GitHub Release.
-ARG MODEL_URL=https://huggingface.co/AQILRAYHAN/plate-rcnn/resolve/main/plate_rcnn.pt
-RUN curl -fL "$MODEL_URL" -o /app/plate_rcnn.pt
+
 
 COPY . .
 
