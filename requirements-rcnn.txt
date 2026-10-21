@@ -1,0 +1,5 @@
+# Only needed when PLATE_RCNN_PATH is set (Faster R-CNN detector).
+# Install with the CPU wheel index to keep the image small, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+torch>=2.2
+torchvision>=0.17

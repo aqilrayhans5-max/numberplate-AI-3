@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: platevision-ai
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
