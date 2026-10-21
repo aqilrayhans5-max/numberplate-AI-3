@@ -13,7 +13,7 @@ COPY requirements.txt requirements-rcnn.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Download the trained plate model from the GitHub Release.
-ARG MODEL_URL=https://github.com/YOUR-USER/NumberPlateAI/releases/download/v1/plate_rcnn.pt
+ARG MODEL_URL=https://github.com/aqilrayhans5-max/NumberPlateAI/releases/download/v1/plate_rcnn.pt
 RUN curl -fL "$MODEL_URL" -o /app/plate_rcnn.pt
 
 COPY . .
